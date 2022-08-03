@@ -1,0 +1,49 @@
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 quiz-content">
+            <p-tabView>
+                <p-tabPanel header="Task">
+                    <div class="road-answer-grid">
+                        <div class="road" id="road1">1</div>
+                        <div class="road" id="road2">2</div>
+                        <div class="road" id="road3">3</div>
+                        <div class="road" id="road4">4</div>
+                        <div class="road" id="road5">5</div>
+                        <div class="road" id="road6">6</div>
+                        <div class="road" id="road7">7</div>
+                        <div class="road" id="road8">8</div>
+                        <div class="road" id="road9">9</div>
+                        
+                        <i class="pi pi-angle-double-right road" (click)="confirmSkip()"></i>   
+                    </div>
+                    <div class="question" >{{Allquestion[i].question}}</div>
+                    <div class="count-down">
+                        {{maxtime}}
+                    </div>
+                    <div class="answer-content">
+                        <div class="answer-grid">
+                            <button class="answer" (click)="CheckAnswer('answer1',this.Allquestion[i].answers[0])" id="answer1" [disabled]="buttonDisabled"  >{{this.Allquestion[i].answers[0]}}</button>
+                            <button class="answer" (click)="CheckAnswer('answer2',this.Allquestion[i].answers[1])" id="answer2" [disabled]="buttonDisabled">{{this.Allquestion[i].answers[1]}}</button>
+                            <button class="answer" (click)="CheckAnswer('answer3',this.Allquestion[i].answers[2])" id="answer3" [disabled]="buttonDisabled">{{this.Allquestion[i].answers[2]}}</button>
+                            <button class="answer" (click)="CheckAnswer('answer4',this.Allquestion[i].answers[3])" id="answer4" [disabled]="buttonDisabled">{{this.Allquestion[i].answers[3]}}</button>
+                        </div>
+                        <div class="events">
+                            <button class="result" (click)="confirmResult()">Result</button>
+                            <button class="exit" (click)="confirmExit()">Exit</button>
+                        </div>
+                        
+                    </div>
+                </p-tabPanel>
+                <p-tabPanel header="{{minute}}:{{second}}"  [disabled]="true" >
+                </p-tabPanel>
+            </p-tabView>
+        </div>
+        <div class="col-4">
+            Command Line
+        </div>
+    </div>
+</div>
+

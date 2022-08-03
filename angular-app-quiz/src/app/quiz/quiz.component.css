@@ -1,0 +1,82 @@
+
+.quiz-content
+{
+    margin-left:-120px;
+}
+.question,.count-down
+{
+    text-align: center;
+    font-weight: 500;
+    font-size: x-large;
+}
+.answer-content
+{
+    height: 67vh;
+}
+.answer-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap:10px;
+    margin:20px 0;
+
+}
+.answer,.road
+{
+    border: 3px solid rgba(116, 115, 115, 0.795);
+    background-color: rgba(95, 95, 95, 0.795);
+    border-radius: 5px;
+    padding:5px 25px;
+    color:white;
+    outline:none;
+}
+.answer:hover
+{
+    border-color: rgb(161, 162, 165);
+    font-weight: 500;
+}
+.road-answer-grid
+{
+    display: flex;
+    gap:10px;
+    margin:20px 0;
+    justify-content: space-around;
+}
+.road
+{
+    text-align: center;
+}
+#road1
+{
+    background-color: rgb(158, 158, 4);
+}
+.pi-angle-double-right
+{
+    font-size: 26px;
+}
+.pi-angle-double-right:hover,.exit:hover
+{
+    background-color:red
+}
+#next
+{
+    display: none;
+}
+.events
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.exit,.result
+{
+    padding: 5px 45px;
+    border: none;
+    background-color:rgba(95, 95, 95, 0.425);
+    color:white;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.result:hover
+{
+    background-color: royalblue;
+}

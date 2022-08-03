@@ -1,0 +1,14 @@
+button
+{
+    position: relative;
+    left:43.5%;
+    top:360px;
+    padding: 15px 60px;
+}
+.loading
+{
+    font-size: xx-large;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgba(95, 95, 95, 0.795);
+}
